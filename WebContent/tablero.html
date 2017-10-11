@@ -15,125 +15,138 @@ table.center {
 	margin-right: auto;
 	text-align: center;
 	font-weight: bold;
+	align:center;
+}
+
+h1 {
+	color: black;
+	font-size: 30px;
+	text-align: center;
+}
+
+h2 {
+	color: black;
+	font-size: 20px;
+	text-align: center;
 }
 </style>
 <title>Tableros de juego</title>
-
 <body>
-<form action="/submit.html" method="post">
 
-<h1 style="color:black;font-size:30px;text-align:center;">Tableros de juego</h1>
+	<h1>Tableros de juego</h1>
 
-<h2 style="color:black;font-size:20px;text-align:center;">Tablero con menús de selección</h2>
-	<table class="center" border="1" style="align: center;">
-		<tr>
-			<th></th>
-			<th>A</th>
-			<th>B</th>
-			<th>C</th>
-			<th>D</th>
-		</tr>
-		<tr>
-			<td>1</td>
-			<td bgcolor="blue">	</td>
-			<td>	</td>
-			<td>	</td>
-			<td>	</td>
-		</tr>
-		<tr>
-			<td>2</td>
-			<td>	</td>
-			<td bgcolor="red">	</td>
-			<td>	</td>
-			<td>	</td>
-		</tr>
-		<tr>
-			<td>3</td>
-			<td>	</td>
-			<td bgcolor="red">	</td>
-			<td>	</td>
-			<td>	</td>
-		</tr>
-		<tr>
-			<td>4</td>
-			<td>	</td>
-			<td>	</td>
-			<td>	</td>
-			<td bgcolor="orange">	</td>
-		</tr>
-	</table>
-	
-	<table class="center" style="align: center;">
-	<tr><td>
-	<select name="numeros">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    </select>
-    </td>
-    <td>
-    <select name="letras">
-    <option value="A">A</option>
-    <option value="B">B</option>
-    <option value="C">C</option>
-    <option value="D">D</option>
-  	</select>
-    </td>
-    <td>
-	<input type="submit" value="Enviar">
-	</td></tr>
-	</table>
-	
+	<h2>Tablero con menús de selección</h2>
+	<form method="get">
+		<table class="center" border="1">
+			<tr>
+				<th></th>
+				<th>A</th>
+				<th>B</th>
+				<th>C</th>
+				<th>D</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td bgcolor="blue"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td></td>
+				<td bgcolor="red"></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td></td>
+				<td bgcolor="red"></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td bgcolor="orange"></td>
+			</tr>
+		</table>
+
+		<table class="center">
+			<tr>
+				<td><select name="numeros">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+				</select></td>
+				<td><select name="letras">
+						<option value="A">A</option>
+						<option value="B">B</option>
+						<option value="C">C</option>
+						<option value="D">D</option>
+				</select></td>
+				<td><input type="submit" value="Enviar"></td>
+			</tr>
+		</table>
+	</form>
 	<br>
-<br>
+	<br>
 
-<h2 style="color:black;font-size:20px;text-align:center;">Tablero con botones en las casillas</h2>
-<br>
-	<table class="center" style="align: center;">
-		<tr>
-			<th></th>
-			<th>A</th>
-			<th>B</th>
-			<th>C</th>
-			<th>D</th>
-		</tr>
-		<tr>
-			<td>1</td>
-			<td bgcolor="blue"> <input type="radio" name="tocar" ></td>
-			<td><input type="radio" name="tocar" ></td>
-			<td><input type="radio" name="tocar" ></td>
-			<td><input type="radio" name="tocar" ></td>
-		</tr>
-		<tr>
-			<td>2</td>
-			<td><input type="radio" name="tocar" ></td>
-			<td bgcolor="red"><input type="radio" name="tocar" ></td>
-			<td><input type="radio" name="tocar" ></td>
-			<td><input type="radio" name="tocar" ></td>
-		</tr>
-		<tr>
-			<td>3</td>
-			<td><input type="radio" name="tocar" ></td>
-			<td bgcolor="red"><input type="radio" name="tocar" ></td>
-			<td><input type="radio" name="tocar" ></td>
-			<td><input type="radio" name="tocar" ></td>
-		</tr>
-		<tr>
-			<td>4</td>
-			<td><input type="radio" name="tocar" ></td>
-			<td><input type="radio" name="tocar" ></td>
-			<td><input type="radio" name="tocar" ></td>
-			<td bgcolor="orange"><input type="radio" name="tocar" ></td>
-		</tr>
-	</table>
-	
-	<table class="center" style="align: center;">
-	<tr><td>
-	    <input type="submit" value="Enviar"></td>
-	</tr>
-	</table>
-</form>
+	<h2>Tablero con botones en las casillas</h2>
+	<br>
+	<form method="get">
+		<table class="center">
+			<tr>
+				<th></th>
+				<th>A</th>
+				<th>B</th>
+				<th>C</th>
+				<th>D</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td bgcolor="blue"><input type="radio" name="tocar" value="1#A"
+					required></td>
+				<td><input type="radio" name="tocar" value="1#B" required></td>
+				<td><input type="radio" name="tocar" value="1#C" required></td>
+				<td><input type="radio" name="tocar" value="1#D" required></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td><input type="radio" name="tocar" value="2#A" required></td>
+				<td bgcolor="red"><input type="radio" name="tocar" value="2#B"
+					required></td>
+				<td><input type="radio" name="tocar" value="2#C" required></td>
+				<td><input type="radio" name="tocar" value="2#D" required></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td><input type="radio" name="tocar" value="3#A" required></td>
+				<td bgcolor="red"><input type="radio" name="tocar" value="3#B"
+					required></td>
+				<td><input type="radio" name="tocar" value="3#C" required></td>
+				<td><input type="radio" name="tocar" value="3#D" required></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td><input type="radio" name="tocar" value="4#A" required></td>
+				<td><input type="radio" name="tocar" value="4#B" required></td>
+				<td><input type="radio" name="tocar" value="4#C" required></td>
+				<td bgcolor="orange"><input type="radio" name="tocar"
+					value="4#D" required></td>
+			</tr>
+		</table>
+
+		<table class="center">
+			<tr>
+				<td><input type="submit" value="Enviar"></td>
+			</tr>
+		</table>
+	</form>
 </body>
 </head>
 </html>

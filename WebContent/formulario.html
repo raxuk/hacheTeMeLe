@@ -9,17 +9,20 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+legend{
+ color: blue; font-size: 30px; text-align: left;}
 </style>
 
 
 <title>REGISTRO</title>
 </head>
-<body style="width: 80%;">
+<body>
 
-	<form action="/submit.html" method="post">
+	<form method="post">
 		<fieldset>
-			<legend style="color: blue; font-size: 30px; text-align: left;"><b>Registro
-				de jugadores de "Hundir la Flota"</b></legend>
+			<legend>
+				<b>Registro de jugadores de "Hundir la Flota"</b>
+			</legend>
 
 			<table>
 
@@ -50,10 +53,10 @@ body {
 
 				<tr>
 					<td>Tipo de pago (*):</td>
-					<td><input type="radio" name="tipoPagoB" value="male" required>
-						Contrareembolso <input type="radio" name="tipoPagoB"
-						value="female" required> Tarjeta VISA <input type="radio"
-						name="tipoPagoB" value="other" required> Cheque</td>
+					<td><input type="radio" name="tipoPagoB" value="CR" required>
+						Contrareembolso <input type="radio" name="tipoPagoB" value= "VISA" required>
+						Tarjeta VISA <input type="radio" name="tipoPagoB" value = "cheque" required>
+						Cheque</td>
 				</tr>
 
 				<tr>
